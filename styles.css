@@ -497,6 +497,8 @@ small {
 	display: flex;
 	justify-content: center;
 	gap: 5rem;
+	max-width: 160rem;
+	margin: 0 auto;
 }
 
 .heading-left {
@@ -505,7 +507,7 @@ small {
 
 .gallery {
 	display: grid;
-	grid-template-columns: repeat(3, minmax(20rem, 1fr));
+	grid-template-columns: repeat(3, 1fr);
 	gap: 0.5rem;
 	margin-left: 2rem;
 	max-width: 40%;
@@ -527,11 +529,12 @@ small {
 
 .testimonials {
 	align-self: center;
+	max-width: 60%;
 }
 
 .testimonials-details {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(20rem, 1fr));
+	grid-template-columns: repeat(2, 1fr);
 	gap: 2rem;
 	margin-top: 3rem;
 }
@@ -577,7 +580,7 @@ small {
 
 .testimonials-credits i {
 	color: #379e0a;
-	margin-bottom: 0.4rem;
+	margin-top: 1rem;
 }
 
 .section-pricing {
