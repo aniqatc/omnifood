@@ -451,12 +451,13 @@ small {
 .card-desc {
 	color: #626262;
 	font-size: 1.2rem;
-	margin: 1rem 1rem;
+	margin: auto 1rem 1rem 1rem;
 }
 
 .meal-stats {
 	font-size: 1.6rem;
 	padding: 1rem;
+	margin: 0 2rem;
 }
 
 .meal-stats li {

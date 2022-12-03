@@ -16,9 +16,10 @@
 	}
 
 	.meal-types-list li {
-		padding: 0.4rem 0.6rem;
-		margin: 0.4rem;
+		padding: 0.3rem 0.5rem;
+		margin: 0.2rem;
 	}
+
 	.card-body {
 		padding: 1rem 1.4rem;
 	}
