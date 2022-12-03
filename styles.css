@@ -155,6 +155,10 @@ small {
 	animation: marquee 15s infinite alternate;
 }
 
+.marquee-animation:hover {
+	animation-play-state: paused;
+}
+
 @keyframes marquee {
 	0% {
 		transform: translateX(0%);
@@ -506,8 +510,19 @@ small {
 	margin-left: 2rem;
 }
 
+.gallery-img-wrapper {
+	overflow: hidden;
+}
+
 .gallery img {
 	height: 20rem;
+	transition: all 150ms ease-in;
+	filter: opacity(0.8);
+}
+
+.gallery img:hover {
+	transform: scale(1.2);
+	filter: opacity(1);
 }
 
 .testimonials {
@@ -691,6 +706,23 @@ small {
 .selected-pricing {
 	background: #d8f5cc;
 	border-radius: 10px;
+	position: relative;
+	overflow: hidden;
+}
+
+.selected-pricing:after {
+	content: "Best Value";
+	background: #246d05;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2rem;
+	margin: auto;
+	position: absolute;
+	top: 5%;
+	right: -9%;
+	transform: rotate(40deg);
+	padding: 0.6rem 4rem;
 }
 
 .selected-btn {
