@@ -496,7 +496,7 @@ small {
 	padding: 5rem;
 	display: flex;
 	justify-content: center;
-	gap: 2rem;
+	gap: 5rem;
 }
 
 .heading-left {
@@ -508,7 +508,7 @@ small {
 	grid-template-columns: repeat(3, minmax(20rem, 1fr));
 	gap: 0.5rem;
 	margin-left: 2rem;
-	width: 50%;
+	max-width: 40%;
 }
 
 .gallery-img-wrapper {
@@ -531,7 +531,7 @@ small {
 
 .testimonials-details {
 	display: grid;
-	grid-template-columns: repeat(2, minmax(20rem, 44rem));
+	grid-template-columns: repeat(2, minmax(20rem, 1fr));
 	gap: 2rem;
 	margin-top: 3rem;
 }
