@@ -508,6 +508,7 @@ small {
 	grid-template-columns: repeat(3, minmax(20rem, 1fr));
 	gap: 0.5rem;
 	margin-left: 2rem;
+	width: 50%;
 }
 
 .gallery-img-wrapper {
@@ -515,7 +516,6 @@ small {
 }
 
 .gallery img {
-	height: 20rem;
 	transition: all 150ms ease-in;
 	filter: opacity(0.8);
 }
