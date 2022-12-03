@@ -606,42 +606,116 @@
 			</section>
 			<section class="section-subscribe">
 				<div class="subscribe-box">
-					<img src="/assets/bowls.jpg" alt="several bowls of healthy meals" />
+					<div class="subscribe-img"></div>
+
 					<div class="subscribe-form">
 						<h1 class="subscribe-heading">Get your first meal for free!</h1>
 						<p class="subscribe-desc">
 							Healthy, tasty and hassle-free meals are waiting for you. Starting
-							eating well today. You can canel or pause anytime. And the first
+							eating well today. You can cancel or pause anytime. And the first
 							meal is on us!
 						</p>
 						<form>
-							<label for="user-name">Name</label>
-							<input
-								type="text"
-								id="user-name"
-								placeholder="John Doe"
-								required
-							/>
-							<label for="user-email">Email</label>
-							<input
-								type="email"
-								id="user-email"
-								placeholder="john@doe.com"
-								required
-							/>
-							<label for="user-plan">Which plan interests you the most?</label>
-							<select name="plans" id="user-plan">
-								<option value="choose">Please choose one</option>
-								<option value="starter">Starter</option>
-								<option value="complete">Complete</option>
-								<option value="Custom">Custom</option>
-							</select>
-							<input type="submit" value="Sign up" />
+							<div>
+								<label for="user-name">Name</label>
+								<input
+									type="text"
+									id="user-name"
+									placeholder="John Doe"
+									required
+								/>
+							</div>
+							<div>
+								<label for="user-email">Email</label>
+								<input
+									type="email"
+									id="user-email"
+									placeholder="john@doe.com"
+									required
+								/>
+							</div>
+							<div>
+								<label for="user-plan"
+									>Which plan interests you the most?</label
+								>
+								<select name="plans" id="user-plan">
+									<option value="">Please choose one</option>
+									<option value="starter">Starter</option>
+									<option value="complete">Complete</option>
+									<option value="Custom">Custom</option>
+								</select>
+							</div>
+							<div>
+								<button class="subscribe-btn">Sign Up</button>
+							</div>
 						</form>
 					</div>
 				</div>
 			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<div class="section-footer">
+			<div class="footer-info">
+				<img src="/assets/omnifood-logo.png" class="logo" />
+				<p class="footer-info-desc">
+					Omnifood uses AI to provide 365-days-per-year food subscription services that will make you eat healthy again. 
+				</p>
+				<div class="footer-socials">
+					<a href="mailto:hello@aniqa.io" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+					<a href="https://twitter.com/aniqatc" target="_blank">
+					<i class="fa-brands fa-twitter"></i></a>
+					<a href="https://github.com/aniqatc">
+					<i class="fa-brands fa-github"></i></a>
+					<a href="https://linkedin.com/in/aniqaio">
+					<i class="fa-brands fa-linkedin"></i></a>
+				</div>
+				<div class="app-download">
+					<img src="/assets/footer/apple.png" />
+					<img src="/assets/footer/google-play.png" />
+				</div>
+			</div>
+			<nav class="footer-nav">
+				<div class="account-links">
+					<ul class="footer-links">
+						<li>Account</li>
+						<li>Member Portal</li>
+						<li>Create Account</li>
+						<li>Referral Program</li>
+					</ul>
+				</div>
+				<div class="resource-links">
+					<ul class="footer-links">
+						<li>Resources</li>
+						<li>Recipe Directory</li>
+						<li>Help Center</li>
+						<li>Privacy & Terms</li>
+					</ul>
+				</div>
+				<div class="company-links">
+					<ul class="footer-links">
+						<li>Company</li>
+						<li>About Omnifood</li>
+						<li>Cooking Partners</li>
+						<li>Careers</li>
+					</ul>
+				</div>
+				<div class="contact-info">
+					<ul class="footer-links">
+						<li>Contact</li>
+						<li>
+							623 Harrison Street, <br />
+							San Francisco, CA 94107
+						</li>
+						<li>415-201-6370 <br />help@omnifood.com</li>
+					</ul>
+				</div></div>
+			</nav>
+			
+		</footer>
+		<div class="dev-credits">
+			<i class="fa-solid fa-code"></i>
+				Designed & Coded by <a href="https://twitter.com/aniqatc" target="_blank">Aniqa</a><br/>
+				<small>Concept from <a href="https://omnifood.dev" target="_blank">Omnifood</a> Project</small>
+			</div>
 	</body>
 </html>

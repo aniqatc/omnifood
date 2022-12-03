@@ -760,7 +760,7 @@ small {
 }
 
 .subscribe-form {
-	padding: 3rem 4rem;
+	padding: 3rem 2rem;
 	color: white;
 }
 
@@ -775,6 +775,10 @@ small {
 	border-radius: 10px;
 }
 
+.section-subscribe {
+	padding: 8rem;
+}
+
 .subscribe-heading {
 	font-size: 4rem;
 	margin-bottom: 2rem;
@@ -783,20 +787,146 @@ small {
 .subscribe-desc {
 	font-size: 2rem;
 	margin-bottom: 2rem;
+	line-height: 2.8rem;
 }
 
-.subscribe-box img {
-	width: 100%;
-	height: 34rem;
-	object-fit: cover;
+.subscribe-img {
+	background-image: url(/assets/bowls.jpg);
+	background-size: cover;
+	border-radius: 10px 0 0 10px;
+	opacity: 0.75;
 }
 
 .subscribe-box input,
-select {
+select,
+button {
 	display: block;
-	font-size: 2rem;
+	font-size: 1.4rem;
 	border-radius: 4px;
 	border: none;
+	padding: 1rem;
+	margin: 1rem 0;
+	width: 90%;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.subscribe-box label {
+	font-size: 1.3rem;
+}
+
+.subscribe-form form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.subscribe-btn {
+	font-size: 1.8rem;
+	font-weight: 700;
+	cursor: pointer;
+	background: #216703;
+	color: white;
+	margin-top: 2.7rem;
+	transition: all 150ms ease-in;
+}
+
+.subscribe-btn:hover {
+	background: #143b04;
+}
+
+footer {
+	background: #f7fff4;
+	border-top: 1px solid #e1e1e1;
+	padding: 6rem 5rem;
+}
+
+.section-footer {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 4rem;
+	max-width: 120rem;
+}
+
+.footer-info-desc {
+	color: #333333;
+	margin: 2rem 0;
+	font-size: 1.2rem;
+}
+
+.app-download {
+	display: flex;
+	gap: 1rem;
+}
+
+.app-download img {
+	height: 4rem;
+	cursor: pointer;
+}
+
+.app-download img:hover {
+	transform: scale(0.95);
+	filter: grayscale(1);
+}
+
+.footer-nav {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.footer-socials i {
+	font-size: 2rem;
+	color: #123901;
+	margin-right: 2rem;
+	margin: 0 2rem 2rem 0;
+}
+
+.footer-socials i:hover {
+	color: #216703;
+}
+
+.footer-links {
+	font-size: 1.4rem;
+}
+
+.footer-links li {
+	padding: 1rem;
+	cursor: pointer;
+}
+
+.footer-links li:hover {
+	text-decoration: underline;
+}
+
+.footer-links li:first-child {
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-decoration: none;
+	cursor: auto;
+}
+
+.contact-info li:hover {
+	text-decoration: none;
+	cursor: auto;
+}
+
+.dev-credits {
+	font-size: 1.4rem;
+	background: #123901;
+	color: #d7efcd;
+	font-weight: 700;
+	text-align: center;
+	padding: 1rem;
+}
+
+.dev-credits a {
+	color: white;
+}
+
+.dev-credits a:hover {
+	color: rgb(112, 215, 68);
 }
 
 @media only screen and (max-width: 1000px) {
