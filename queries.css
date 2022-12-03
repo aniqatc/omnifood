@@ -1,0 +1,35 @@
+@media only screen and (max-width: 83em) {
+	.body-heading {
+		font-size: 3.8rem;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.testimonials-details {
+		grid-template-columns: auto;
+	}
+
+	.testimonials-card {
+		padding: 2rem 3rem;
+	}
+
+	.meal-types-list li {
+		padding: 0.4rem 0.6rem;
+		margin: 0.4rem;
+	}
+	.card-body {
+		padding: 1rem 1.4rem;
+	}
+
+	.card-heading {
+		font-size: 1.8rem;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 500px) {
+}
