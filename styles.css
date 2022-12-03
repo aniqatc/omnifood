@@ -296,7 +296,7 @@ ul {
 	opacity: 0.8;
 }
 
-.container {
+.section-how {
 	max-width: 130rem;
 	margin: 0 auto;
 	padding: 6rem 4rem;
@@ -398,6 +398,8 @@ ul {
 		#eef9e9 0%,
 		rgba(255, 255, 255, 0.28) 100%
 	);
+	margin: 0 auto;
+	padding: 6rem 4rem;
 }
 
 @media only screen and (max-width: 1000px) {
