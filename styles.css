@@ -493,9 +493,9 @@ small {
 }
 
 .section-testimonials {
-	padding: 2rem;
+	padding: 5rem;
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	gap: 2rem;
 }
 
