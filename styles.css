@@ -51,6 +51,11 @@ span {
 	font-weight: 700;
 }
 
+small {
+	font-size: 1.2rem;
+	margin-top: 1.6rem;
+}
+
 /* HEADER */
 .logo {
 	height: 3rem;
@@ -641,6 +646,9 @@ span {
 	padding: 4rem;
 	width: 36rem;
 	height: 40rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .pricing-heading {
@@ -667,13 +675,13 @@ span {
 }
 
 .pricing-list-items i {
-	font-size: 1.4rem;
 	color: #379e0a;
 }
 
 .pricing-card .btn {
 	display: block;
 	margin-top: 2.2rem;
+	text-align: center;
 }
 
 .selected-pricing {
@@ -693,11 +701,6 @@ span {
 
 .pricing-heading span {
 	font-size: 3rem;
-}
-
-small {
-	font-size: 1.2rem;
-	margin-top: 1.6rem;
 }
 
 .pricing-message {
