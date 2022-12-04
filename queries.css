@@ -478,6 +478,10 @@
 	.footer-nav {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	.meal-types-overview br {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 24em) {
