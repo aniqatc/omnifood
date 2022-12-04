@@ -345,7 +345,6 @@
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
-		margin: 2rem;
 		max-width: 54rem;
 	}
 
@@ -378,14 +377,11 @@
 		flex-direction: column;
 		height: auto;
 		gap: 2rem;
+		margin: 2rem;
 	}
 
 	.how-img-wrapper .mobile-bg:last-child {
 		margin-bottom: 14rem;
-	}
-
-	.mobile-bg {
-		margin-top: 3rem;
 	}
 
 	.section-testimonials {
@@ -445,9 +441,6 @@
 	footer {
 		padding: 3rem;
 	}
-	.footer-info {
-		width: 42rem;
-	}
 
 	.section-footer {
 		grid-template-columns: auto;
@@ -462,7 +455,6 @@
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
-		margin: 2rem;
 		max-width: 44rem;
 	}
 	.mobile-hero-img img {
@@ -485,5 +477,24 @@
 	}
 	.footer-nav {
 		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media only screen and (max-width: 24em) {
+	.hero-marquee,
+	.hero-heading,
+	.hero-description {
+		max-width: 34rem;
+	}
+	.hero-heading {
+		font-size: 3.8rem;
+	}
+
+	.body-heading br {
+		display: none;
+	}
+
+	.body-heading {
+		margin: 0 2rem;
 	}
 }
