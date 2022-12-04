@@ -493,7 +493,7 @@
 	}
 }
 
-@media only screen and (max-width: 20em) {
+@media only screen and (max-width: 24em) {
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
