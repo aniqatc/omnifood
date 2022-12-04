@@ -257,7 +257,7 @@ small {
 .hero-img-wrapper,
 .mobile-hero-img {
 	justify-self: center;
-	margin-bottom: 2rem;
+	margin: 1rem auto 2rem;
 }
 
 .hero-img-wrapper img {
