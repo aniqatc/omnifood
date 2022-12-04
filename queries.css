@@ -181,7 +181,7 @@
 		color: #103201;
 		z-index: 1;
 		flex-direction: column;
-		transition: all 150ms ease-in;
+		transition: all 200ms ease-in;
 		opacity: 0;
 		pointer-events: none;
 		visibility: hidden;
@@ -192,6 +192,7 @@
 		opacity: 1;
 		pointer-events: auto;
 		visibility: visible;
+		transform: translateX(0);
 	}
 
 	.nav-open .mobile-close {
