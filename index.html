@@ -35,7 +35,7 @@
 		></script>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header nav-open">
 			<img
 				src="/assets/omnifood-logo.png"
 				class="logo"
@@ -56,10 +56,18 @@
 						<a href="#">Pricing</a>
 					</li>
 				</ul>
-			</nav>
-			<a href="#" class="btn solid-btn"
+					<a href="#" class="btn solid-btn mobile-order"
 				><i class="fa-regular fa-calendar-check"></i> Order Today</a
 			>
+			</nav>
+			<a href="#" class="btn solid-btn desktop-order"
+				><i class="fa-regular fa-calendar-check"></i> Order Today</a
+			>
+
+			<button class="mobile-nav-btn">
+				<i class="fa-solid fa-bars mobile-open"></i>
+				<i class="fa-solid fa-xmark mobile-close"></i>
+			</button>
 		</header>
 		<main>
 			<section class="section-hero">
@@ -105,9 +113,14 @@
 						<img
 							src="/assets/hero/meals.png"
 							alt="Several bowls of healthy meals, primarily salads and vegetarian"
-							class="hero-img-main"
+	
+						
 						/>
+					
 					</div>
+					<div class="mobile-hero-img">
+						<img src="/assets/bowls.jpg"
+						alt="Several bowls of healthy meals, primarily salads and vegetarian" /></div>
 				</div>
 				<div class="hero-customer-proof">
 					<div class="customer-img-wrapper">
@@ -279,7 +292,6 @@
 							<ul class="meal-types-list">
 								<li class="vegetarian">Vegetarian</li>
 								<li class="kid">Kid-Friendly</li>
-									<li class="paleo">Paleo</li>
 							</ul>
 							<p class="card-heading">Summer Pasta Salad</p>
 							<p class="card-desc">
@@ -537,7 +549,7 @@
 							<li><i class="fa-solid fa-check"></i> Order <span>24/7</span></li>
 							<li><i class="fa-solid fa-check"></i> Delivery is free</li>
 							<li>
-								<i class="fa-solid fa-check"></i> Get access to
+								<i class="fa-solid fa-check"></i> Access to
 								<span>exclusive</span> recipes
 							</li>
 						</ul>
@@ -561,7 +573,7 @@
 								<span>exclusive</span> recipes
 							</li>
 							<li>
-								<i class="fa-solid fa-check"></i> Get access to
+								<i class="fa-solid fa-check"></i> Access to
 								<span>expert</span> nutrionists
 							</li>
 						</ul>
@@ -673,10 +685,7 @@
 					<a href="https://linkedin.com/in/aniqaio">
 					<i class="fa-brands fa-linkedin"></i></a>
 				</div>
-				<div class="app-download">
-					<img src="/assets/footer/apple.png" />
-					<img src="/assets/footer/google-play.png" />
-				</div>
+				
 			</div>
 			<nav class="footer-nav">
 				<div class="account-links">

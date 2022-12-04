@@ -15,7 +15,8 @@ body {
 	font-family: "DM Sans", sans-serif;
 	height: 100%;
 	color: #121212;
-	font-size: 62.5%;
+	font-size: 64%;
+	overflow-x: hidden;
 }
 
 img {
@@ -73,12 +74,12 @@ small {
 .main-nav-list {
 	list-style: none;
 	display: flex;
-	gap: 2.2rem;
-	font-size: 1.8rem;
+	gap: 1.8rem;
+	font-size: 1.7rem;
 	font-weight: 700;
 	background: #d8f5cc;
 	border-radius: 50px;
-	padding: 1rem 2.4rem;
+	padding: 1rem 2rem;
 }
 
 .main-nav-list a {
@@ -97,7 +98,29 @@ small {
 
 .header .solid-btn i {
 	color: #e3f9da;
-	margin-right: 0.3rem;
+	margin-right: 0.2rem;
+}
+
+/* MOBILE NAV */
+.mobile-nav-btn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: none;
+	box-shadow: none;
+}
+
+.mobile-nav-btn i {
+	color: #0e2803;
+	font-size: 3.6rem;
+}
+
+.mobile-open {
+}
+
+.mobile-close,
+.mobile-order {
+	display: none;
 }
 
 /* HERO */
@@ -112,11 +135,12 @@ small {
 
 .hero-group {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 45fr 55fr;
 	max-width: 130rem;
 	margin: 0 auto;
 	align-items: center;
 	gap: 6rem 0;
+	justify-content: center;
 }
 
 .hero-text-wrapper {
@@ -141,18 +165,17 @@ small {
 	max-width: 65rem;
 	white-space: nowrap;
 	overflow: hidden;
-	margin: 0 auto;
 }
 
 .meal-types-list {
 	text-transform: uppercase;
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: 1.2rem;
 	line-height: 3rem;
 }
 
 .marquee-animation {
-	animation: marquee 15s infinite alternate;
+	animation: marquee 14s infinite alternate-reverse;
 }
 
 .marquee-animation:hover {
@@ -249,12 +272,29 @@ small {
 	justify-self: center;
 }
 
+.hero-img-wrapper img {
+	min-width: 32rem;
+	margin-bottom: 2rem;
+}
+
+.mobile-hero-img img {
+	display: none;
+	max-width: 45rem;
+	max-height: 45rem;
+	object-fit: cover;
+	aspect-ratio: 1/1;
+	border-radius: 16px;
+	filter: opacity(0.8);
+	margin: 5rem auto;
+}
+
 .hero-customer-proof {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	padding-top: 2rem;
 	gap: 1.5rem;
+	margin-top: 2rem;
 }
 
 .customer-img-wrapper {
@@ -273,7 +313,7 @@ small {
 }
 
 .customer-data {
-	font-size: 1.5rem;
+	font-size: 1.6rem;
 }
 
 .customer-data i {
@@ -287,7 +327,7 @@ small {
 
 .customer-data span:last-of-type {
 	color: #585858;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-weight: 500;
 }
 
@@ -488,9 +528,10 @@ small {
 	color: #379e0a;
 }
 
-.meal-types-overview ul {
+.meal-types-overview .meal-types-list {
 	margin: 3rem 2rem;
 	transform: scale(1.4);
+	line-height: 4rem;
 }
 
 .section-testimonials {
@@ -565,18 +606,18 @@ small {
 	margin: 0 auto;
 }
 
-.testimonials-card p {
+.testimonials-text {
+	font-size: 1.6rem;
+}
+
+.testimonials-credits p {
 	font-size: 1.4rem;
+	color: #646464;
 	margin-left: 1rem;
 }
 
-.testimonials-credits {
-	font-size: 1.2rem;
-	color: #646464;
-}
-
 .testimonials-credits span {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: 400;
 }
 
@@ -724,9 +765,9 @@ small {
 	margin: auto;
 	position: absolute;
 	top: 5%;
-	right: -9%;
+	right: -14%;
 	transform: rotate(40deg);
-	padding: 0.6rem 4rem;
+	padding: 0.6rem 6rem;
 }
 
 .selected-btn {
@@ -746,7 +787,7 @@ small {
 .pricing-message {
 	text-align: center;
 	margin-top: 2rem;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	color: grey;
 }
 
@@ -779,7 +820,7 @@ small {
 }
 
 .banner-desc {
-	font-size: 1.1rem;
+	font-size: 1.4rem;
 }
 
 .banner-item i {
@@ -882,6 +923,7 @@ footer {
 	margin: 0 auto;
 	gap: 4rem;
 	max-width: 120rem;
+	align-items: flex-end;
 }
 
 .footer-info-desc {
@@ -890,26 +932,10 @@ footer {
 	font-size: 1.2rem;
 }
 
-.app-download {
-	display: flex;
-	gap: 1rem;
-}
-
-.app-download img {
-	height: 4rem;
-	cursor: pointer;
-}
-
-.app-download img:hover {
-	transform: scale(0.95);
-	filter: grayscale(1);
-}
-
 .footer-nav {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	justify-content: space-around;
-	align-items: flex-end;
 }
 
 .footer-socials i {
