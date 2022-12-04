@@ -54,7 +54,7 @@ span {
 }
 
 small {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	margin-top: 1.6rem;
 }
 
@@ -115,11 +115,8 @@ small {
 	font-size: 3.6rem;
 }
 
-.mobile-open {
-}
-
-.mobile-close,
-.mobile-order {
+.mobile-order,
+.mobile-close i {
 	display: none;
 }
 
@@ -942,7 +939,6 @@ footer {
 	font-size: 2rem;
 	color: #123901;
 	margin-right: 2rem;
-	margin: 0 2rem 2rem 0;
 }
 
 .footer-socials i:hover {
@@ -967,6 +963,7 @@ footer {
 	font-size: 1.5rem;
 	text-decoration: none;
 	cursor: auto;
+	margin-top: 1rem;
 }
 
 .contact-info li:hover {
@@ -975,7 +972,7 @@ footer {
 }
 
 .dev-credits {
-	font-size: 1.4rem;
+	font-size: 1.6rem;
 	background: #123901;
 	color: #d7efcd;
 	font-weight: 700;

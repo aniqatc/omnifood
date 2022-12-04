@@ -14,10 +14,10 @@
 			property="og:description"
 			content="Omnifood uses AI to provide 365-days-per-year food subscription services that will make you eat healthy again. Website built to practice frontend web development and designing skills."
 		/>
-		<meta property="og:image" content="/assets/og-img.png" />
+		<meta property="og:image" content="https://raw.githubusercontent.com/aniqatc/omnifood/main/assets/og-img.png" />
 		<meta name="twitter:card" content="summary_large_image" />
 		<meta name="twitter:site" content="@aniqatc" />
-		<meta name="twitter:image" content="/assets/og-img.png" />
+		<meta name="twitter:image" content="https://raw.githubusercontent.com/aniqatc/omnifood/main/assets/og-img.png" />
 		<meta name="twitter:image:alt" content="Hero section of website" />
 		<title>Omnifood</title>
 		<link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
@@ -35,13 +35,13 @@
 		></script>
 	</head>
 	<body>
-		<header class="header nav-open">
+		<header class="header">
 			<img
 				src="/assets/omnifood-logo.png"
 				class="logo"
 				alt="logo for omnifood"
 			/>
-			<nav class="main-nav nav-open">
+			<nav class="main-nav">
 				<ul class="main-nav-list">
 					<li>
 						<a href="#">How It Works</a>
@@ -65,9 +65,13 @@
 			>
 
 			<button class="mobile-nav-btn">
+				<span class="mobile-open">
 				<i class="fa-solid fa-bars mobile-open"></i>
-				<i class="fa-solid fa-xmark mobile-close"></i>
+				</span>
+				<span class="mobile-close"><i class="fa-solid fa-xmark mobile-close"></i></span>
+			
 			</button>
+		
 		</header>
 		<main>
 			<section class="section-hero">
@@ -559,7 +563,7 @@
 						<div class="pricing-heading">
 							<h3>Custom</h3>
 							<h1><span>$</span>999+</h1>
-							<small>Get connected with an expert nutrionist!</small>
+							<small>Connect with an expert nutrionist!</small>
 						</div>
 
 						<ul class="pricing-list-items">
