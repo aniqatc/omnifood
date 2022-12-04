@@ -493,11 +493,11 @@
 	}
 }
 
-@media only screen and (max-width: 24em) {
+@media only screen and (max-width: 25em) {
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
-		max-width: 34rem;
+		max-width: 36rem;
 	}
 
 	.hero-buttons .btn {
