@@ -462,16 +462,6 @@
 		max-height: 30rem;
 	}
 
-	.hero-buttons {
-		gap: 1.2rem;
-		margin: 2rem auto;
-		width: 50%;
-		display: flex;
-		flex-direction: column;
-	}
-	.hero-buttons .btn {
-		padding: 1.5rem;
-	}
 	.featured-logos img {
 		height: 1.2rem;
 	}
@@ -490,8 +480,17 @@
 	.hero-description {
 		max-width: 34rem;
 	}
+
+	.hero-buttons .btn {
+		padding: 1rem 2rem;
+	}
 	.hero-heading {
 		font-size: 3.8rem;
+		line-height: 5rem;
+	}
+
+	.hero-description {
+		font-size: 1.8rem;
 	}
 
 	.body-heading br {
