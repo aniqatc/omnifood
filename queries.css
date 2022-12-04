@@ -509,4 +509,7 @@
 	.body-heading {
 		margin: 0 2rem;
 	}
+	#toggle:checked + .toggle-wrapper:before {
+		transform: translateX(125%);
+	}
 }
