@@ -91,10 +91,6 @@
 		font-size: 4.2rem;
 	}
 
-	.hero-text-wrapper {
-		margin: auto 3rem;
-	}
-
 	.meal-card-overview {
 		grid-template-columns: repeat(2, minmax(28rem, 38rem));
 		gap: 3rem;
@@ -341,7 +337,7 @@
 	.hero-heading,
 	.hero-description {
 		margin: 2rem;
-		max-width: 48rem;
+		max-width: 46rem;
 	}
 
 	.subheading {
@@ -382,14 +378,19 @@
 	}
 
 	.section-testimonials {
-		padding: 1rem;
-		gap: 2rem;
+		padding: 3rem;
+		gap: 3rem;
 	}
 
 	.testimonials-details {
 		gap: 1rem;
 		grid-template-columns: auto;
 	}
+
+	.gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
 	.meal-types-overview .meal-types-list {
 		margin: 1rem;
 		transform: scale(1);
@@ -401,6 +402,11 @@
 
 	.meal-card {
 		width: 40rem;
+	}
+
+	.pricing-card {
+		width: 36rem;
+		height: 40rem;
 	}
 
 	.card-body {
@@ -438,5 +444,11 @@
 
 	.footer-nav {
 		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+@media only screen and (max-width: 29em) {
+	body {
+		background: blue;
 	}
 }
