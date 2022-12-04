@@ -376,7 +376,6 @@ small {
 	justify-content: center;
 	align-items: center;
 	gap: 10rem;
-	height: 50rem;
 }
 
 .how-img-wrapper .mobile-bg:last-child {
@@ -389,12 +388,10 @@ small {
 	align-items: center;
 	gap: 10rem;
 	margin-top: 3rem;
-	height: 50rem;
 	flex-direction: row-reverse;
 }
 
 .how-text-wrapper {
-	max-width: 52rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -548,7 +545,7 @@ small {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	gap: 0.5rem;
-	grid-auto-flow: dense;
+	width: 100%;
 }
 
 .gallery-img-wrapper {
@@ -663,7 +660,7 @@ small {
 	z-index: 1;
 	font-size: 1.6rem;
 	text-align: center;
-	padding: 1.2rem 2rem;
+	padding: 1.2rem 2.2rem;
 	font-weight: 500;
 }
 
@@ -676,7 +673,7 @@ small {
 }
 
 #toggle:checked + .toggle-wrapper:before {
-	transform: translateX(125%);
+	transform: translateX(132%);
 }
 
 #toggle:checked + .toggle-wrapper p:first-child {

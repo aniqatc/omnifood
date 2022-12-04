@@ -127,6 +127,10 @@
 		display: flex;
 		flex-direction: column-reverse;
 	}
+
+	.heading-left {
+		text-align: center;
+	}
 	.gallery {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -226,6 +230,11 @@
 
 	.featured-logos img {
 		height: 2rem;
+	}
+
+	.how-full-wrapper,
+	.how-full-wrapper-switch {
+		gap: 4rem;
 	}
 
 	.subscribe-box {
@@ -337,17 +346,15 @@
 	.hero-heading,
 	.hero-description {
 		margin: 2rem;
-		max-width: 46rem;
+		max-width: 54rem;
 	}
 
 	.subheading {
 		font-size: 2rem;
 	}
 
-	.body-heading {
-		font-size: 4rem;
-		line-height: 5rem;
-		margin-top: 1rem;
+	.how-heading {
+		font-size: 2.6rem;
 	}
 
 	.featured-logos img {
@@ -448,7 +455,31 @@
 }
 
 @media only screen and (max-width: 29em) {
-	body {
-		background: blue;
+	.hero-marquee,
+	.hero-heading,
+	.hero-description {
+		margin: 2rem;
+		max-width: 44rem;
+	}
+	.mobile-hero-img img {
+		max-width: 30rem;
+		max-height: 30rem;
+	}
+
+	.hero-buttons {
+		gap: 1.2rem;
+		margin: 2rem auto;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+	}
+	.hero-buttons .btn {
+		padding: 1.5rem;
+	}
+	.featured-logos img {
+		height: 1.2rem;
+	}
+	.footer-nav {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
