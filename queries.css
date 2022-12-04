@@ -337,7 +337,7 @@
 	}
 }
 
-@media only screen and (max-width: 34em) {
+@media only screen and (max-width: 35em) {
 	.header {
 		padding: 0 2rem;
 	}
@@ -451,7 +451,7 @@
 	}
 }
 
-@media only screen and (max-width: 29em) {
+@media only screen and (max-width: 30em) {
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
