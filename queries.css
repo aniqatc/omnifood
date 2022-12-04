@@ -353,6 +353,34 @@
 		line-height: 5rem;
 		margin-top: 1rem;
 	}
+
+	.featured-logos img {
+		height: 1.6rem;
+	}
+	.hero-customer-proof {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.section-how {
+		padding: 4rem 0;
+	}
+
+	.how-step-num {
+		margin-top: 8rem;
+	}
+
+	.how-full-wrapper,
+	.how-full-wrapper-switch {
+		flex-direction: column;
+		height: auto;
+		gap: 2rem;
+	}
+
+	.how-img-wrapper .mobile-bg:last-child {
+		margin-bottom: 14rem;
+	}
+
 	.section-testimonials {
 		padding: 1rem;
 		gap: 2rem;
@@ -369,7 +397,6 @@
 
 	.meal-card-overview {
 		grid-template-columns: auto;
-		gap: 1rem;
 	}
 
 	.meal-card {
