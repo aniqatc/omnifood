@@ -90,6 +90,18 @@ small {
 	margin-right: 0.2rem;
 }
 
+.sticky {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: #f1ffebb7;
+	backdrop-filter: blur(4px);
+	z-index: 10;
+	height: 8rem;
+	box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+}
+
 /* MOBILE NAV */
 .mobile-nav-btn {
 	border: none;
@@ -162,7 +174,7 @@ small {
 }
 
 .marquee-animation {
-	animation: marquee 14s infinite alternate-reverse;
+	animation: marquee 12s infinite alternate;
 }
 
 .marquee-animation:hover {
@@ -945,7 +957,6 @@ footer {
 
 .footer-links li {
 	padding: 1rem;
-	cursor: pointer;
 }
 
 .footer-links li:hover {
