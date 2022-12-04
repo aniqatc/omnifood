@@ -177,14 +177,12 @@
 		opacity: 0;
 		pointer-events: none;
 		visibility: hidden;
-		transform: translateX(100%);
 	}
 
 	.nav-open .main-nav {
 		opacity: 1;
 		pointer-events: auto;
 		visibility: visible;
-		transform: translateX(0);
 	}
 
 	.nav-open .mobile-close i {
@@ -318,9 +316,6 @@
 	.section-subscribe {
 		padding: 2rem;
 	}
-	footer {
-		padding: 3rem;
-	}
 
 	.footer-links li {
 		padding: 0.3rem;
@@ -331,21 +326,90 @@
 	.footer-nav {
 		grid-template-columns: repeat(2, 1fr);
 	}
+
+	footer .logo {
+		height: 2.4rem;
+	}
 }
 
 @media only screen and (max-width: 34em) {
+	.header {
+		padding: 0 2rem;
+	}
+
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
 		margin: 2rem;
 		max-width: 48rem;
 	}
+
+	.subheading {
+		font-size: 2rem;
+	}
+
+	.body-heading {
+		font-size: 4rem;
+		line-height: 5rem;
+		margin-top: 1rem;
+	}
+	.section-testimonials {
+		padding: 1rem;
+		gap: 2rem;
+	}
+
+	.testimonials-details {
+		gap: 1rem;
+		grid-template-columns: auto;
+	}
+	.meal-types-overview .meal-types-list {
+		margin: 1rem;
+		transform: scale(1);
+	}
+
+	.meal-card-overview {
+		grid-template-columns: auto;
+		gap: 1rem;
+	}
+
+	.meal-card {
+		width: 40rem;
+	}
+
+	.card-body {
+		padding: 2rem;
+	}
+
+	.card-heading {
+		font-size: 2.4rem;
+	}
+
+	.card-desc {
+		font-size: 1.6rem;
+	}
+
+	.meal-stats {
+		font-size: 2rem;
+	}
+
 	.member-info-banner {
 		display: grid;
 		grid-template-columns: auto auto;
 		gap: 2rem;
 	}
-	.footer-socials i {
-		margin-right: 1rem;
+
+	footer {
+		padding: 3rem;
+	}
+	.footer-info {
+		width: 42rem;
+	}
+
+	.section-footer {
+		grid-template-columns: auto;
+	}
+
+	.footer-nav {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
