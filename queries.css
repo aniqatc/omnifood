@@ -163,6 +163,7 @@
 	.main-nav {
 		position: absolute;
 		background: #92ba80e1;
+		backdrop-filter: blur(3px);
 		top: 0;
 		left: 0;
 		width: 100%;
