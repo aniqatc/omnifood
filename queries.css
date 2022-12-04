@@ -481,9 +481,19 @@
 	.subscribe-heading {
 		font-size: 3.4rem;
 	}
+	.body-heading br {
+		display: none;
+	}
+
+	.body-heading {
+		margin: 0 2rem;
+	}
+	#toggle:checked + .toggle-wrapper:before {
+		transform: translateX(125%);
+	}
 }
 
-@media only screen and (max-width: 25em) {
+@media only screen and (max-width: 20em) {
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
@@ -500,16 +510,5 @@
 
 	.hero-description {
 		font-size: 1.8rem;
-	}
-
-	.body-heading br {
-		display: none;
-	}
-
-	.body-heading {
-		margin: 0 2rem;
-	}
-	#toggle:checked + .toggle-wrapper:before {
-		transform: translateX(125%);
 	}
 }

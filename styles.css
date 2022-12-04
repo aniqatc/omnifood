@@ -97,6 +97,7 @@ small {
 	cursor: pointer;
 	display: none;
 	box-shadow: none;
+	width: fit-content;
 }
 
 .mobile-nav-btn i {
@@ -266,8 +267,8 @@ small {
 
 .mobile-hero-img img {
 	display: none;
-	max-width: 45rem;
-	max-height: 45rem;
+	max-width: 50rem;
+	max-height: 50rem;
 	object-fit: cover;
 	aspect-ratio: 1/1;
 	border-radius: 16px;
