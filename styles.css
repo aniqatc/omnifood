@@ -716,7 +716,7 @@ small {
 }
 
 #toggle:checked + .toggle-wrapper:before {
-	transform: translateX(132%);
+	transform: translateX(130%);
 }
 
 #toggle:checked + .toggle-wrapper p:first-child {

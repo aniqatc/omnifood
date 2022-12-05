@@ -185,11 +185,11 @@
 		left: 0;
 		width: 100%;
 		height: 100vh;
+		color: #103201;
+		z-index: 1;
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		color: #103201;
-		z-index: 1;
 		flex-direction: column;
 		transition: all 200ms ease-in;
 		opacity: 0;
@@ -254,7 +254,7 @@
 
 	/* SUBSCRIBE FORM */
 	.subscribe-box {
-		grid-template-columns: 40fr 60fr;
+		grid-template-columns: 45fr 55fr;
 	}
 
 	.subscribe-form form {
@@ -266,7 +266,6 @@
 }
 
 @media only screen and (max-width: 44em) {
-	/* GENERAL */
 	/* HERO */
 	.hero-group {
 		grid-template-columns: 1fr;
@@ -308,7 +307,8 @@
 	}
 
 	.pricing-card {
-		padding: 3rem 2rem;
+		width: 36rem;
+		height: 40rem;
 	}
 
 	.pricing-list-items {
@@ -433,11 +433,6 @@
 
 	.meal-card {
 		width: 40rem;
-	}
-
-	.pricing-card {
-		width: 36rem;
-		height: 40rem;
 	}
 
 	.meal-card-body {

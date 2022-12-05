@@ -91,13 +91,13 @@ const appShots = document.querySelectorAll(".mobile-bg");
 
 const scrollActivate = () => {
 	const scroll = document.documentElement.scrollTop;
-	if (scroll > 500) {
+	if (scroll > 700) {
 		appShots[0].classList.add("animate-img");
 	}
-	if (scroll > 800) {
+	if (scroll > 1100) {
 		appShots[1].classList.add("animate-img");
 	}
-	if (scroll > 1200) {
+	if (scroll > 1500) {
 		appShots[2].classList.add("animate-img");
 	}
 };
