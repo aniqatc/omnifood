@@ -10,7 +10,7 @@ navButton.addEventListener("click", function () {
 });
 
 /* SMOOTH SCROLLING */
-const links = document.querySelectorAll("a");
+const links = document.querySelectorAll("a:not(.social-link)");
 
 links.forEach(function (link) {
 	link.addEventListener("click", function (el) {
@@ -36,10 +36,9 @@ links.forEach(function (link) {
 
 /* STICKY NAVIGATION */
 const heroElement = document.querySelector(".section-hero");
-const observer = new IntersectionObserver(
+const navObserver = new IntersectionObserver(
 	function (entries) {
 		const ent = entries[0];
-		console.log(ent);
 		if (ent.isIntersecting !== true) {
 			document.body.classList.add("sticky");
 		} else {
@@ -49,25 +48,22 @@ const observer = new IntersectionObserver(
 	{
 		root: null,
 		threshold: 0,
-		rootMargin: "-80px",
+		rootMargin: "-90px",
 	}
 );
 
-observer.observe(heroElement);
+navObserver.observe(heroElement);
 
 /* PRICING TOGGLE */
 const pricing = document.querySelectorAll(".pricing-num");
 const toggleButton = document.querySelector("#toggle");
 
 function togglePricing() {
-	if (toggleButton.checked) {
-		pricing[0].textContent = "3995";
-		pricing[1].textContent = "6995";
-		pricing[2].textContent = "9995";
-	} else {
-		pricing[0].textContent = "395";
-		pricing[1].textContent = "645";
-		pricing[2].textContent = "999";
+	const prices = toggleButton.checked
+		? ["3995", "6995", "9995"]
+		: ["395", "645", "999"];
+	for (let i = 0; i < pricing.length; i++) {
+		pricing[i].textContent = prices[i];
 	}
 }
 
@@ -78,13 +74,32 @@ function submission(event) {
 	event.preventDefault();
 	let name = document.querySelector("#user-name").value;
 	let planChoice = document.querySelector("#user-plan").value;
-	alert(planChoice);
-	if (planChoice === "Starter") {
-		alert(
-			`Thank you ${name} for your interest in the ${planChoice} plan! We'd be happy to send you more information about ${planChoice}!`
-		);
+	let message = document.querySelector(".submission");
+	if (planChoice !== "") {
+		message.style.display = "block";
+		message.textContent = `Thank you for your interest in the ${planChoice} plan, ${name}. We'd be happy to send you more information about this plan to your email!`;
+	} else {
+		message.textContent = `Sorry, you need to choose a plan to proceed!`;
 	}
 }
 
 const subscribeForm = document.querySelector("#form-subscribe-element");
 subscribeForm.addEventListener("submit", submission);
+
+/* SCROLL ANIMATE */
+const appShots = document.querySelectorAll(".mobile-bg");
+
+const scrollActivate = () => {
+	const scroll = document.documentElement.scrollTop;
+	if (scroll > 500) {
+		appShots[0].classList.add("animate-img");
+	}
+	if (scroll > 1300) {
+		appShots[1].classList.add("animate-img");
+	}
+	if (scroll > 2100) {
+		appShots[2].classList.add("animate-img");
+	}
+};
+
+window.addEventListener("scroll", scrollActivate);
