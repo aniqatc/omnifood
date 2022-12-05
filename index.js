@@ -72,3 +72,19 @@ function togglePricing() {
 }
 
 toggleButton.addEventListener("click", togglePricing);
+
+/* FORM FUNCTIONALITY */
+function submission(event) {
+	event.preventDefault();
+	let name = document.querySelector("#user-name").value;
+	let planChoice = document.querySelector("#user-plan").value;
+	alert(planChoice);
+	if (planChoice === "Starter") {
+		alert(
+			`Thank you ${name} for your interest in the ${planChoice} plan! We'd be happy to send you more information about ${planChoice}!`
+		);
+	}
+}
+
+const subscribeForm = document.querySelector("#form-subscribe-element");
+subscribeForm.addEventListener("submit", submission);
