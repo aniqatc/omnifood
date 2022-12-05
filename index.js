@@ -54,3 +54,21 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(heroElement);
+
+/* PRICING TOGGLE */
+const pricing = document.querySelectorAll(".pricing-num");
+const toggleButton = document.querySelector("#toggle");
+
+function togglePricing() {
+	if (toggleButton.checked) {
+		pricing[0].textContent = "3995";
+		pricing[1].textContent = "6995";
+		pricing[2].textContent = "9995";
+	} else {
+		pricing[0].textContent = "395";
+		pricing[1].textContent = "645";
+		pricing[2].textContent = "999";
+	}
+}
+
+toggleButton.addEventListener("click", togglePricing);
