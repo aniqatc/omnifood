@@ -162,8 +162,9 @@
 
 	.main-nav {
 		position: absolute;
-		background: #92ba80e1;
-		backdrop-filter: blur(3px);
+		background: #92ba80e9;
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
 		top: 0;
 		left: 0;
 		width: 100%;
