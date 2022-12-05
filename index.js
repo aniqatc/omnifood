@@ -77,7 +77,7 @@ function submission(event) {
 	let message = document.querySelector(".submission");
 	if (planChoice !== "") {
 		message.style.display = "block";
-		message.textContent = `Thank you for your interest in the ${planChoice} plan, ${name}. We'd be happy to send you more information about this plan to your email!`;
+		message.textContent = `Thank you for your interest in the ${planChoice} plan, ${name}. Unfortunately, Omnifood is a fictional company and I'm not saving any of this data currently!`;
 	} else {
 		message.textContent = `Sorry, you need to choose a plan to proceed!`;
 	}
@@ -94,10 +94,10 @@ const scrollActivate = () => {
 	if (scroll > 500) {
 		appShots[0].classList.add("animate-img");
 	}
-	if (scroll > 1300) {
+	if (scroll > 800) {
 		appShots[1].classList.add("animate-img");
 	}
-	if (scroll > 2100) {
+	if (scroll > 1200) {
 		appShots[2].classList.add("animate-img");
 	}
 };

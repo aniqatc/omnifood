@@ -90,6 +90,7 @@ small {
 	margin-right: 0.2rem;
 }
 
+/* HEADER STICKY */
 .sticky .header {
 	position: fixed;
 	top: 0;
@@ -165,6 +166,7 @@ small {
 	margin-bottom: 3rem;
 }
 
+/* HERO MARQUEE */
 .hero-marquee {
 	max-width: 65rem;
 	white-space: nowrap;
@@ -193,13 +195,6 @@ small {
 	100% {
 		transform: translateX(-100%);
 	}
-}
-
-.meal-types-list li {
-	display: inline;
-	padding: 0.6rem 0.8rem;
-	border-radius: 50px;
-	margin: 0.5rem;
 }
 
 .paleo {
@@ -238,6 +233,14 @@ small {
 	background: #f39f52;
 }
 
+.meal-types-list li {
+	display: inline;
+	padding: 0.6rem 0.8rem;
+	border-radius: 50px;
+	margin: 0.5rem;
+}
+
+/* HERO BUTTONS  + GENERAL BUTTON STYLING */
 .hero-buttons {
 	margin-top: 4rem;
 }
@@ -272,6 +275,7 @@ small {
 	background: #226c02;
 }
 
+/* HERO IMAGE */
 .hero-img-wrapper,
 .mobile-hero-img {
 	justify-self: center;
@@ -292,6 +296,7 @@ small {
 	filter: opacity(0.8);
 }
 
+/* HERO CUSTOMER PROOF */
 .hero-customer-proof {
 	display: flex;
 	align-items: center;
@@ -335,6 +340,7 @@ small {
 	font-weight: 500;
 }
 
+/* FEATURED LOGOS SECTION */
 .featured-logos {
 	display: flex;
 	justify-content: space-around;
@@ -353,12 +359,7 @@ small {
 	opacity: 0.8;
 }
 
-.section-how {
-	max-width: 130rem;
-	margin: 0 auto;
-	padding: 6rem 4rem;
-}
-
+/* GENERAL HEADING STYLING */
 .subheading {
 	color: #379e0a;
 	text-transform: uppercase;
@@ -377,6 +378,17 @@ small {
 
 .body-heading span {
 	color: #379e0a;
+}
+
+.heading-left {
+	text-align: start;
+}
+
+/* HOW IT WORKS SECTION */
+.section-how {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 6rem 4rem;
 }
 
 .how-full-wrapper {
@@ -405,17 +417,7 @@ small {
 	justify-content: center;
 }
 
-@keyframes fade-in {
-	0% {
-		opacity: 0;
-		transform: translateY(40%);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0%);
-	}
-}
-
+/* HOW IT WORKS SECTION: APP SCREENSHOTS */
 .mobile-bg {
 	background: linear-gradient(180deg, #95cc7e 0%, rgba(149, 204, 126, 0) 100%);
 	border-radius: 20px;
@@ -431,11 +433,24 @@ small {
 	display: none;
 }
 
+/* ANIMATION FOR APP SCREENSHOTS */
 .animate-img img {
 	animation: fade-in 800ms ease-in-out;
 	display: block;
 }
 
+@keyframes fade-in {
+	0% {
+		opacity: 0;
+		transform: translateY(40%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+/* HOW IT WORKS SECTION: TEXT & DETAILS */
 .how-step-num {
 	display: flex;
 	align-items: center;
@@ -465,6 +480,7 @@ small {
 	max-width: 46rem;
 }
 
+/* MEALS SECTION */
 .section-meals {
 	background: linear-gradient(
 		180deg,
@@ -486,6 +502,7 @@ small {
 	margin-top: 3rem;
 }
 
+/* MEAL CARDS */
 .meal-card {
 	border: 1px solid rgba(230, 230, 230, 0.6);
 	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
@@ -498,17 +515,17 @@ small {
 	border-radius: 16px 16px 0px 0px;
 }
 
-.card-body {
+.meal-card-body {
 	padding: 1.2rem 2rem;
 }
 
-.card-heading {
+.meal-card-heading {
 	font-size: 2rem;
 	font-weight: 700;
 	margin: 1rem 1rem;
 }
 
-.card-desc {
+.meal-card-desc {
 	color: #626262;
 	font-size: 1.2rem;
 	margin: auto 1rem 1rem 1rem;
@@ -537,6 +554,7 @@ small {
 	background: white;
 }
 
+/* MEAL TYPES LIST EXPANDED in MEAL SECTION */
 .meal-types-overview {
 	margin: 4rem auto;
 	font-size: 1.8rem;
@@ -558,6 +576,7 @@ small {
 	white-space: nowrap;
 }
 
+/* TESTIMONIALS SECTION */
 .section-testimonials {
 	display: grid;
 	grid-template-columns: 40fr 60fr;
@@ -568,10 +587,7 @@ small {
 	justify-content: center;
 }
 
-.heading-left {
-	text-align: start;
-}
-
+/* TESTIMONIALS: GALLERY SECTION */
 .gallery {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -595,6 +611,7 @@ small {
 	filter: opacity(1);
 }
 
+/* TESTIMONIALS: TESTIMONIALS CARDS */
 .testimonials {
 	align-self: center;
 }
@@ -650,12 +667,7 @@ small {
 	color: #379e0a;
 }
 
-.section-pricing {
-	max-width: 130rem;
-	margin: 0 auto;
-	padding: 6rem 4rem 2rem 4rem;
-}
-
+/* PRICING TOGGLE BUTTON */
 .toggle-prices {
 	margin-top: 2rem;
 }
@@ -719,6 +731,14 @@ small {
 	cursor: pointer;
 }
 
+/* PRICING SECTION */
+.section-pricing {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 6rem 4rem 2rem 4rem;
+}
+
+/* PRICING SECTION: PRICING CARDS */
 .pricing-card-wrapper {
 	display: flex;
 	align-items: center;
@@ -773,6 +793,11 @@ small {
 	text-align: center;
 }
 
+.dollar-sign {
+	font-size: 3rem;
+}
+
+/* SELECTED PRICING CARD */
 .selected-pricing {
 	background: #d8f5cc;
 	border-radius: 10px;
@@ -805,10 +830,7 @@ small {
 	background: #123901;
 }
 
-.dollar-sign {
-	font-size: 3rem;
-}
-
+/* PRICING BANNER & EXTRA DETAILS */
 .pricing-message {
 	text-align: center;
 	margin-top: 2rem;
@@ -861,6 +883,11 @@ small {
 	padding: 1.5rem 2rem;
 }
 
+/* SUBSCRIBE FORM */
+.section-subscribe {
+	padding: 8rem;
+}
+
 .subscribe-form {
 	padding: 3rem 2rem;
 	color: white;
@@ -875,10 +902,6 @@ small {
 	background: #66a04d;
 	box-shadow: 0px 2px 30px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-}
-
-.section-subscribe {
-	padding: 8rem;
 }
 
 .subscribe-heading {
@@ -899,6 +922,13 @@ small {
 	opacity: 0.75;
 }
 
+/* SUBSCRIBE FORM ELEMENTS */
+.subscribe-form form {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	column-gap: 1rem;
+}
+
 .subscribe-box input,
 select,
 button {
@@ -914,12 +944,6 @@ button {
 
 .subscribe-box label {
 	font-size: 1.5rem;
-}
-
-.subscribe-form form {
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	column-gap: 1rem;
 }
 
 .subscribe-btn {
@@ -948,6 +972,7 @@ button {
 	display: none;
 }
 
+/* FOOTER SECTION */
 footer {
 	background: #f7fff4;
 	border-top: 1px solid #e1e1e1;
@@ -967,13 +992,7 @@ footer {
 .footer-info-desc {
 	color: #333333;
 	margin: 2rem 0;
-	font-size: 1.2rem;
-}
-
-.footer-nav {
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	justify-content: space-around;
+	font-size: 1.4rem;
 }
 
 .footer-socials i {
@@ -984,6 +1003,13 @@ footer {
 
 .footer-socials i:hover {
 	color: #216703;
+}
+
+/* FOOTER LINKS */
+.footer-nav {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-around;
 }
 
 .footer-links {
@@ -1011,6 +1037,7 @@ footer {
 	cursor: auto;
 }
 
+/* CREDIT BANNER */
 .dev-credits {
 	font-size: 1.6rem;
 	background: #123901;

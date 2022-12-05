@@ -1,8 +1,10 @@
 @media only screen and (max-width: 83em) {
+	/* GENERAL */
 	.body-heading {
 		font-size: 3.8rem;
 	}
 
+	/* TESTIMONIALS */
 	.gallery {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -15,6 +17,7 @@
 		padding: 2rem 3rem;
 	}
 
+	/* MEAL CARDS */
 	.meal-card .meal-types-list li {
 		padding: 0.4rem 0.6rem;
 		margin: 0.2rem;
@@ -25,16 +28,16 @@
 		line-height: 2rem;
 	}
 
-	.card-body {
+	.meal-card-body {
 		padding: 1rem 1.4rem;
 	}
 
-	.card-heading {
+	.meal-card-heading {
 		font-size: 1.8rem;
 		margin: 1rem 0.6rem;
 	}
 
-	.card-desc {
+	.meal-card-desc {
 		margin: auto 0.6rem 0.6rem 0.6rem;
 	}
 
@@ -49,11 +52,13 @@
 }
 
 @media only screen and (max-width: 72em) {
+	/* GENERAL */
 	html,
 	body {
 		font-size: 57%;
 	}
 
+	/* HEADER & NAV */
 	.main-nav-list {
 		gap: 1rem;
 		padding: 1rem 2rem;
@@ -63,10 +68,12 @@
 		padding: 1rem 3rem;
 	}
 
+	/* HERO */
 	.hero-marquee {
 		max-width: 56rem;
 	}
 
+	/* PRICING CARDS */
 	.pricing-card {
 		padding: 3rem 1rem 3rem 2rem;
 		width: 34rem;
@@ -82,7 +89,14 @@
 	}
 }
 
+/* Tablet Landscape */
 @media only screen and (max-width: 61em) {
+	/* GENERAL */
+	.heading-left {
+		text-align: center;
+	}
+
+	/* HERO */
 	.hero-marquee {
 		max-width: 45rem;
 	}
@@ -91,6 +105,7 @@
 		font-size: 4.2rem;
 	}
 
+	/* MEAL CARDS */
 	.meal-card-overview {
 		grid-template-columns: repeat(2, minmax(28rem, 38rem));
 		gap: 3rem;
@@ -105,12 +120,12 @@
 		line-height: 3rem;
 	}
 
-	.card-heading {
+	.meal-card-heading {
 		font-size: 2.2rem;
 		margin: 1rem 0.6rem;
 	}
 
-	.card-desc {
+	.meal-card-desc {
 		margin: auto 0.6rem 0.6rem 0.6rem;
 		font-size: 1.4rem;
 	}
@@ -123,14 +138,12 @@
 		padding-bottom: 1rem;
 	}
 
+	/* TESTIMONIALS */
 	.section-testimonials {
 		display: flex;
 		flex-direction: column-reverse;
 	}
 
-	.heading-left {
-		text-align: center;
-	}
 	.gallery {
 		grid-template-columns: repeat(4, 1fr);
 	}
@@ -139,6 +152,7 @@
 		grid-template-columns: repeat(2, 1fr);
 	}
 
+	/* PRICING CARD */
 	.pricing-card .btn {
 		padding: 1rem 2rem;
 	}
@@ -149,11 +163,13 @@
 }
 
 @media only screen and (max-width: 56em) {
+	/* GENERAL */
 	html,
 	body {
 		font-size: 50%;
 	}
 
+	/* MOBILE NAV */
 	.mobile-nav-btn {
 		display: flex;
 		flex-direction: column;
@@ -162,7 +178,7 @@
 
 	.main-nav {
 		position: absolute;
-		background: #92ba80e9;
+		background: #92ba80e6;
 		backdrop-filter: blur(4px);
 		-webkit-backdrop-filter: blur(4px);
 		top: 0;
@@ -181,24 +197,6 @@
 		visibility: hidden;
 	}
 
-	.nav-open .main-nav {
-		opacity: 1;
-		pointer-events: auto;
-		visibility: visible;
-	}
-
-	.nav-open .mobile-close i {
-		display: block;
-	}
-
-	.nav-open .mobile-close {
-		z-index: 100;
-	}
-
-	.nav-open .mobile-open i {
-		display: none;
-	}
-
 	.main-nav-list {
 		position: relative;
 		flex-direction: column;
@@ -210,10 +208,23 @@
 	.main-nav-list a {
 		font-size: 2.4rem;
 		padding: 1rem 3rem;
+		border-radius: 50px;
 	}
 
-	.main-nav-list a:hover {
-		border-radius: 50px;
+	/* HAMBURGER NAV OPEN */
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+	}
+
+	.nav-open .mobile-close {
+		display: block;
+		z-index: 100;
+	}
+
+	.nav-open .mobile-open {
+		display: none;
 	}
 
 	.desktop-order {
@@ -226,6 +237,7 @@
 		font-size: 2.4rem;
 	}
 
+	/* FEATURED SECTION */
 	.featured-logos {
 		padding: 2rem 1rem;
 	}
@@ -234,11 +246,13 @@
 		height: 2rem;
 	}
 
+	/* SECTION HOW IT WORKS */
 	.how-full-wrapper,
 	.how-full-wrapper-switch {
 		gap: 4rem;
 	}
 
+	/* SUBSCRIBE FORM */
 	.subscribe-box {
 		grid-template-columns: 40fr 60fr;
 	}
@@ -249,12 +263,11 @@
 	.subscribe-btn {
 		margin-top: 1.4rem;
 	}
-	.section-pricing {
-		padding: 6rem 2rem 2rem 2rem;
-	}
 }
 
 @media only screen and (max-width: 44em) {
+	/* GENERAL */
+	/* HERO */
 	.hero-group {
 		grid-template-columns: 1fr;
 		gap: 0;
@@ -289,6 +302,7 @@
 		display: block;
 	}
 
+	/* PRICING CARDS */
 	.pricing-card-wrapper {
 		flex-direction: column;
 	}
@@ -317,29 +331,31 @@
 		font-size: 1.6rem;
 	}
 
-	.selected-pricing:after {
-		right: -15%;
-	}
+	/* SUBSCRIBE */
 	.section-subscribe {
 		padding: 2rem;
+	}
+
+	/* FOOTER */
+	footer .logo {
+		height: 2.4rem;
+	}
+
+	.section-footer {
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.footer-nav {
+		grid-template-columns: repeat(2, 1fr);
 	}
 
 	.footer-links li {
 		padding: 0.3rem;
 	}
-	.section-footer {
-		grid-template-columns: 1fr 2fr;
-	}
-	.footer-nav {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	footer .logo {
-		height: 2.4rem;
-	}
 }
 
 @media only screen and (max-width: 35em) {
+	/* HERO */
 	.header {
 		padding: 0 2rem;
 	}
@@ -350,24 +366,28 @@
 		max-width: 54rem;
 	}
 
-	.subheading {
-		font-size: 2rem;
-	}
-
-	.how-heading {
-		font-size: 2.6rem;
-	}
-
-	.featured-logos img {
-		height: 1.6rem;
-	}
 	.hero-customer-proof {
 		flex-direction: column;
 		text-align: center;
 	}
 
+	/* FEATURED SECTION */
+	.featured-logos img {
+		height: 1.6rem;
+	}
+
+	/* GENERAL */
+	.subheading {
+		font-size: 2rem;
+	}
+
+	/* HOW IT WORKS SECTION */
 	.section-how {
 		padding: 4rem 0;
+	}
+
+	.how-heading {
+		font-size: 2.6rem;
 	}
 
 	.how-step-num {
@@ -386,6 +406,7 @@
 		margin-bottom: 14rem;
 	}
 
+	/* TESTIMONIALS */
 	.section-testimonials {
 		padding: 3rem;
 		gap: 3rem;
@@ -400,6 +421,7 @@
 		grid-template-columns: repeat(3, 1fr);
 	}
 
+	/* MEAL CARDS */
 	.meal-types-overview .meal-types-list {
 		margin: 1rem;
 		transform: scale(1);
@@ -418,15 +440,15 @@
 		height: 40rem;
 	}
 
-	.card-body {
+	.meal-card-body {
 		padding: 2rem;
 	}
 
-	.card-heading {
+	.meal-card-heading {
 		font-size: 2.4rem;
 	}
 
-	.card-desc {
+	.meal-card-desc {
 		font-size: 1.6rem;
 	}
 
@@ -434,12 +456,14 @@
 		font-size: 2rem;
 	}
 
+	/* PRICING SECTION BANNER */
 	.member-info-banner {
 		display: grid;
 		grid-template-columns: auto auto;
 		gap: 2rem;
 	}
 
+	/* FOOTER */
 	footer {
 		padding: 3rem;
 	}
@@ -454,35 +478,19 @@
 }
 
 @media only screen and (max-width: 30em) {
+	/* HERO */
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
 		max-width: 44rem;
 	}
+
 	.mobile-hero-img img {
 		max-width: 30rem;
 		max-height: 30rem;
 	}
 
-	.featured-logos img {
-		height: 1.2rem;
-	}
-	.footer-nav {
-		grid-template-columns: repeat(2, 1fr);
-	}
-
-	.meal-types-overview br {
-		display: none;
-	}
-	.subscribe-img {
-		height: 30rem;
-	}
-	.subscribe-box {
-		grid-template-columns: auto;
-	}
-	.subscribe-heading {
-		font-size: 3.4rem;
-	}
+	/* GENERAL */
 	.body-heading br {
 		display: none;
 	}
@@ -490,12 +498,43 @@
 	.body-heading {
 		margin: 0 2rem;
 	}
+
+	/* FEATURED SECTION */
+	.featured-logos img {
+		height: 1.2rem;
+	}
+
+	/* MEAL CARDS */
+	.meal-types-overview br {
+		display: none;
+	}
+
+	/* SUBSCRIBE */
+	.subscribe-box {
+		grid-template-columns: auto;
+	}
+
+	.subscribe-heading {
+		font-size: 3.4rem;
+	}
+
+	.subscribe-img {
+		height: 30rem;
+	}
+
+	/* TOGGLE BUG ON iPHONE FIX */
 	#toggle:checked + .toggle-wrapper:before {
 		transform: translateX(125%);
+	}
+
+	/* FOOTER */
+	.footer-nav {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
 
 @media only screen and (max-width: 25em) {
+	/* HERO */
 	.hero-marquee,
 	.hero-heading,
 	.hero-description {
@@ -505,6 +544,7 @@
 	.hero-buttons .btn {
 		padding: 1rem 2rem;
 	}
+
 	.hero-heading {
 		font-size: 3.8rem;
 		line-height: 5rem;
