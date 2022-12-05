@@ -435,11 +435,11 @@ small {
 
 /* ANIMATION FOR APP SCREENSHOTS */
 .animate-img img {
-	animation: fade-in 800ms ease-in-out;
+	animation: scroll-img 1s ease-in-out;
 	display: block;
 }
 
-@keyframes fade-in {
+@keyframes scroll-img {
 	0% {
 		opacity: 0;
 		transform: translateY(40%);

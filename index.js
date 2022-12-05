@@ -54,6 +54,20 @@ const navObserver = new IntersectionObserver(
 
 navObserver.observe(heroElement);
 
+/* SCROLL ANIMATE */
+const scrollObserver = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("animate-img");
+		} else {
+			entry.target.classList.remove("animate-img");
+		}
+	});
+});
+
+const appShots = document.querySelectorAll(".mobile-bg");
+appShots.forEach((el) => scrollObserver.observe(el));
+
 /* PRICING TOGGLE */
 const pricing = document.querySelectorAll(".pricing-num");
 const toggleButton = document.querySelector("#toggle");
@@ -85,21 +99,3 @@ function submission(event) {
 
 const subscribeForm = document.querySelector("#form-subscribe-element");
 subscribeForm.addEventListener("submit", submission);
-
-/* SCROLL ANIMATE */
-const appShots = document.querySelectorAll(".mobile-bg");
-
-const scrollActivate = () => {
-	const scroll = document.documentElement.scrollTop;
-	if (scroll > 700) {
-		appShots[0].classList.add("animate-img");
-	}
-	if (scroll > 1100) {
-		appShots[1].classList.add("animate-img");
-	}
-	if (scroll > 1500) {
-		appShots[2].classList.add("animate-img");
-	}
-};
-
-window.addEventListener("scroll", scrollActivate);
