@@ -544,13 +544,4 @@
 	.hero-buttons .btn {
 		padding: 1rem 2rem;
 	}
-
-	.hero-heading {
-		font-size: 3.8rem;
-		line-height: 5rem;
-	}
-
-	.hero-description {
-		font-size: 1.8rem;
-	}
 }
