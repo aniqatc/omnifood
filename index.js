@@ -47,14 +47,14 @@ const navObserver = new IntersectionObserver(
 	},
 	{
 		root: null,
-		threshold: 0,
-		rootMargin: "-90px",
+		threshold: 1,
 	}
 );
 
 navObserver.observe(heroElement);
 
 /* SCROLL ANIMATE */
+const appShots = document.querySelectorAll(".mobile-bg");
 const scrollObserver = new IntersectionObserver((entries) => {
 	entries.forEach((entry) => {
 		if (entry.isIntersecting) {
@@ -65,7 +65,6 @@ const scrollObserver = new IntersectionObserver((entries) => {
 	});
 });
 
-const appShots = document.querySelectorAll(".mobile-bg");
 appShots.forEach((el) => scrollObserver.observe(el));
 
 /* PRICING TOGGLE */
