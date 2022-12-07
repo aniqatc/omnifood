@@ -144,7 +144,6 @@ small {
 	max-width: 130rem;
 	margin: 0 auto;
 	align-items: center;
-	gap: 6rem 0;
 	justify-content: center;
 }
 
@@ -303,7 +302,6 @@ small {
 	justify-content: center;
 	padding-top: 2rem;
 	gap: 1.5rem;
-	margin-top: 2rem;
 }
 
 .customer-img-wrapper {
