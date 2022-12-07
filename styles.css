@@ -104,6 +104,10 @@ small {
 	box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
 }
 
+.sticky .section-hero {
+	margin-top: 8rem;
+}
+
 /* MOBILE NAV */
 .mobile-nav-btn {
 	border: none;
@@ -132,7 +136,6 @@ small {
 		rgba(216, 245, 204, 0) 99.61%
 	);
 	padding: 4rem 0;
-	margin-top: 2rem;
 }
 
 .hero-group {
