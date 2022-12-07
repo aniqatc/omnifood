@@ -950,6 +950,11 @@ button {
 	background-repeat: no-repeat;
 	background-position: right 1rem top 50%;
 	background-size: 1rem;
+	color: grey;
+}
+
+.subscribe-box select:focus {
+	color: black;
 }
 
 .subscribe-box label {
