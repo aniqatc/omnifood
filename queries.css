@@ -222,12 +222,25 @@
 	}
 
 	/* PRICING CARD */
+
 	.pricing-card .btn {
 		padding: 1rem 2rem;
 	}
 
+	.pricing-card h3 {
+		font-size: 1.8rem;
+	}
+
+	.pricing-list-items {
+		font-size: 1.4rem;
+	}
+
+	.pricing-list-items li {
+		line-height: 2rem;
+	}
+
 	.selected-pricing:after {
-		right: -19%;
+		right: -22%;
 	}
 	/* SUBSCRIBE */
 	.subscribe-box label {
@@ -235,12 +248,13 @@
 	}
 }
 
-@media only screen and (max-width: 56em) {
+@media only screen and (max-width: 58em) {
 	/* GENERAL */
 	html,
 	body {
 		font-size: 60%;
 	}
+
 	/* FEATURED SECTION */
 	.featured-logos {
 		padding: 2rem 1rem;
@@ -583,7 +597,7 @@
 
 	/* TOGGLE BUG ON iPHONE FIX */
 	#toggle:checked + .toggle-wrapper:before {
-		transform: translateX(125%);
+		transform: translateX(112%);
 	}
 
 	/* FOOTER */

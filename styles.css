@@ -260,7 +260,6 @@ small {
 
 .outline-btn:hover {
 	background: #5db935bb;
-	font-weight: 500;
 	box-shadow: none;
 }
 
@@ -270,7 +269,6 @@ small {
 }
 
 .solid-btn:hover {
-	font-weight: 500;
 	background: #226c02;
 }
 
@@ -675,7 +673,6 @@ small {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	width: fit-content;
-	gap: 1rem;
 	background: #d8f5cc;
 	border-radius: 50px;
 	margin: 0 auto;
@@ -691,7 +688,7 @@ small {
 	left: 4%;
 	right: 0%;
 	bottom: 0%;
-	width: 9rem;
+	width: 9.5rem;
 	height: 3.5rem;
 	border-radius: 50px;
 	transition: all 150ms ease-in;
@@ -714,7 +711,7 @@ small {
 }
 
 #toggle:checked + .toggle-wrapper:before {
-	transform: translateX(130%);
+	transform: translateX(112%);
 }
 
 #toggle:checked + .toggle-wrapper p:first-child {
