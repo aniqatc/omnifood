@@ -19,6 +19,7 @@
 **General**
 
 - Hamburger menu that appears on tablet-sized screens or smaller
+- Sticky header that *sticks* after user scrolls past the hero section
 - Smooth scrolling active whenever any navigation links are clicked
 - Subtle animations that trigger when a certain viewport rule is met (using `IntersectionObserver`)
 - Added cross-browser support for certain CSS styles using prefixes (`-webkit`, `-moz-`, `-o-`, `-ms-`)
