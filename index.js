@@ -1,16 +1,11 @@
-/* HAMBURGER MENU */
-const navButton = document.querySelector('.mobile-nav-btn');
+/* MENU */
 const headerElement = document.querySelector('.header');
+const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-btn');
 
-navButton.addEventListener('click', () =>
-	headerElement.classList.toggle('nav-open')
-);
-
-/* CLOSE MENU ON LINK CLICK */
-const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link =>
 	link.addEventListener('click', () => {
 		headerElement.classList.toggle('nav-open');
+		document.body.classList.toggle('freeze-scroll');
 	})
 );
 

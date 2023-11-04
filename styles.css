@@ -129,6 +129,10 @@ small {
 	display: none;
 }
 
+.freeze-scroll {
+	overflow: hidden;
+}
+
 /* HERO */
 .section-hero {
 	background: linear-gradient(
