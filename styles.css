@@ -17,6 +17,7 @@ body {
 	color: #121212;
 	font-size: 65%;
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
 img {
@@ -483,11 +484,7 @@ small {
 
 /* MEALS SECTION */
 .section-meals {
-	background: linear-gradient(
-		180deg,
-		#eef9e9 0%,
-		rgba(255, 255, 255, 0.28) 100%
-	);
+	background: linear-gradient(180deg, #eef9e9 0%, rgba(255, 255, 255, 0.28) 100%);
 	margin: 0 auto;
 	padding: 4rem;
 	display: flex;
