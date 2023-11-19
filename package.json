@@ -1,0 +1,22 @@
+{
+	"name": "omnifood",
+	"version": "1.0.0",
+	"description": "A full redesign of the original Omnifood website (fictional AI-based meal subscription service)",
+	"private": true,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/aniqatc/omnifood.git"
+	},
+	"homepage": "https://omnifood.aniqa.dev/",
+	"keywords": [
+		"omnifood",
+		"fictional subscription service",
+		"landing page",
+		"html/css website"
+	],
+	"author": "@aniqatc",
+	"license": "ISC",
+	"dependencies": {
+		"sass": "^1.69.5"
+	}
+}
