@@ -6,7 +6,7 @@
 
 ## Tech
 - HTML5
-- CSS3
+- CSS3 compiled from SCSS
 - JavaScript
 
 ## Key Features
@@ -28,6 +28,9 @@
 - Toggle between two different pricing models (monthly or annually)
 - Marquee animation using `@keyframes` animation
 
+**Update 11/2023**
+- Used Sass partials to modularize CSS styles
+
 ## Hero
 <a href="https://omnifood.aniqa.dev" target="_blank">
-<img src="https://raw.githubusercontent.com/aniqatc/omnifood/main/assets/og-img.png" style="max-width:100%;"></a>
+<img src="https://raw.githubusercontent.com/aniqatc/omnifood/main/public/assets/og-img.png" style="max-width:100%;"></a>
