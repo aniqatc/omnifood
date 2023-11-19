@@ -1,0 +1,226 @@
+/* HERO */
+.section-hero {
+	background: linear-gradient(
+		359.56deg,
+		rgba(196, 232, 180, 0.43) -32.94%,
+		rgba(216, 245, 204, 0) 99.61%
+	);
+	padding: 4rem 0;
+}
+
+.hero-group {
+	display: grid;
+	grid-template-columns: 45fr 55fr;
+	max-width: 130rem;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero-text-wrapper {
+	margin: 3rem;
+}
+
+.hero-heading {
+	font-size: 5rem;
+	font-weight: 500;
+	letter-spacing: -0.5px;
+	line-height: 6.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.hero-description {
+	font-size: 2.1rem;
+	max-width: 60rem;
+	margin-bottom: 3rem;
+}
+
+/* HERO MARQUEE */
+.hero-marquee {
+	max-width: 65rem;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.meal-types-list {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 1.2rem;
+	line-height: 3rem;
+}
+
+.marquee-animation {
+	animation: marquee 12s infinite alternate;
+}
+
+.marquee-animation:hover {
+	animation-play-state: paused;
+}
+
+@keyframes marquee {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+.paleo {
+	background: #eed374;
+}
+
+.vegan {
+	background: #64dc77;
+}
+
+.gluten {
+	background: #d7beff;
+}
+
+.lactose {
+	background: #e8c2d4;
+}
+
+.pesca {
+	background: #c2e1e8;
+}
+
+.vegetarian {
+	background: #82ae8e;
+}
+
+.keto {
+	background: #cec99e;
+}
+
+.fodmap {
+	background: #ffa9a9;
+}
+
+.kid {
+	background: #f39f52;
+}
+
+.meal-types-list li {
+	display: inline;
+	padding: 0.6rem 0.8rem;
+	border-radius: 50px;
+	margin: 0.5rem;
+}
+
+/* HERO BUTTONS  + GENERAL BUTTON STYLING */
+.hero-buttons {
+	margin-top: 4rem;
+}
+
+.btn {
+	border-radius: 50px;
+	padding: 1rem 5rem;
+	font-size: 1.7rem;
+	margin: 0 1rem;
+	font-weight: 400;
+	transition: all 150ms ease-in-out;
+}
+
+.outline-btn {
+	background: white;
+	box-shadow: inset 0 0 0 2px #379e0a;
+}
+
+.outline-btn:hover {
+	background: #5db935bb;
+	box-shadow: none;
+}
+
+.solid-btn {
+	background: #379e0a;
+	color: rgb(245, 245, 245);
+}
+
+.solid-btn:hover {
+	background: #226c02;
+}
+
+/* HERO IMAGE */
+.hero-img-wrapper,
+.mobile-hero-img {
+	justify-self: center;
+	margin: 1rem auto 2rem;
+}
+
+.hero-img-wrapper img {
+	min-width: 32rem;
+}
+
+.mobile-hero-img img {
+	display: none;
+	max-width: 50rem;
+	max-height: 50rem;
+	object-fit: cover;
+	aspect-ratio: 1/1;
+	border-radius: 16px;
+	filter: opacity(0.8);
+}
+
+/* HERO CUSTOMER PROOF */
+.hero-customer-proof {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 2rem;
+	gap: 1.5rem;
+}
+
+.customer-img-wrapper {
+	display: flex;
+}
+
+.customer-img-wrapper img {
+	border: 3px solid #ffffff;
+	border-radius: 50px;
+	width: 5.5rem;
+	margin-right: -1.5rem;
+}
+
+.customer-img-wrapper img:last-child {
+	margin: 0;
+}
+
+.customer-data {
+	font-size: 1.6rem;
+}
+
+.customer-data i {
+	color: #b80000;
+	font-weight: 700;
+}
+
+.customer-data span:first-of-type {
+	color: #2a8900;
+}
+
+.customer-data span:last-of-type {
+	color: #585858;
+	font-size: 1.4rem;
+	font-weight: 500;
+}
+
+/* FEATURED LOGOS SECTION */
+.featured-logos {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10rem;
+	border-bottom: 1px solid rgba(128, 128, 128, 0.138);
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 6rem 4rem;
+}
+
+.featured-logos img {
+	object-fit: contain;
+	height: 2.8rem;
+	filter: grayscale(100%) brightness(0);
+	opacity: 0.8;
+}

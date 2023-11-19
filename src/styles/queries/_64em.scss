@@ -1,0 +1,157 @@
+@media only screen and (max-width: 64em) {
+	/* GENERAL */
+	.heading-left {
+		text-align: center;
+	}
+
+	/* HERO */
+	.hero-marquee {
+		max-width: 45rem;
+	}
+
+	.hero-heading {
+		font-size: 4.6rem;
+	}
+
+	/* MOBILE NAV */
+	.mobile-nav-btn {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.main-nav {
+		position: absolute;
+		background: #92ba80e6;
+		backdrop-filter: blur(4px);
+		-webkit-backdrop-filter: blur(4px);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		color: #103201;
+		z-index: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		transition: all 200ms ease-in;
+		opacity: 0;
+		pointer-events: none;
+		visibility: hidden;
+	}
+
+	.main-nav-list {
+		position: relative;
+		flex-direction: column;
+		background: none;
+		text-align: center;
+		gap: 4rem;
+	}
+
+	.main-nav-list a {
+		font-size: 2.4rem;
+		padding: 1rem 3rem;
+		border-radius: 50px;
+	}
+
+	/* HAMBURGER NAV OPEN */
+	.nav-open .main-nav {
+		opacity: 1;
+		pointer-events: auto;
+		visibility: visible;
+	}
+
+	.nav-open .mobile-close {
+		display: block;
+		z-index: 100;
+	}
+
+	.nav-open .mobile-open {
+		display: none;
+	}
+
+	.desktop-order {
+		display: none;
+	}
+
+	.mobile-order {
+		display: block;
+		margin: 3rem auto;
+		font-size: 2.4rem;
+	}
+
+	/* MEAL CARDS */
+	.meal-card-overview {
+		grid-template-columns: repeat(2, minmax(28rem, 38rem));
+		gap: 3rem;
+	}
+
+	.meal-card .meal-types-list li {
+		padding: 0.6rem 0.8rem;
+	}
+
+	.meal-card .meal-types-list {
+		font-size: 1.3rem;
+		line-height: 3rem;
+	}
+
+	.meal-card-heading {
+		font-size: 2.2rem;
+		margin: 1rem 0.6rem;
+	}
+
+	.meal-card-desc {
+		margin: auto 0.6rem 0.6rem 0.6rem;
+		font-size: 1.4rem;
+	}
+
+	.meal-stats {
+		font-size: 1.8rem;
+	}
+
+	.meal-stats li {
+		padding-bottom: 1rem;
+	}
+
+	/* TESTIMONIALS */
+	.section-testimonials {
+		display: flex;
+		flex-direction: column-reverse;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.testimonials-details {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	/* PRICING CARD */
+
+	.pricing-card .btn {
+		padding: 1rem 2rem;
+	}
+
+	.pricing-card h3 {
+		font-size: 1.8rem;
+	}
+
+	.pricing-list-items {
+		font-size: 1.4rem;
+	}
+
+	.pricing-list-items li {
+		line-height: 2rem;
+	}
+
+	.selected-pricing:after {
+		right: -22%;
+	}
+	/* SUBSCRIBE */
+	.subscribe-box label {
+		font-size: 1.2rem;
+	}
+}

@@ -1,0 +1,102 @@
+@media only screen and (max-width: 30em) {
+	/* HERO */
+	.hero-marquee,
+	.hero-heading,
+	.hero-description {
+		max-width: 40rem;
+	}
+
+	.mobile-hero-img img {
+		max-width: 30rem;
+		max-height: 30rem;
+	}
+
+	.hero-heading {
+		font-size: 3.6rem;
+		line-height: 1.5;
+	}
+
+	.hero-description {
+		font-size: 1.8rem;
+	}
+
+	.hero-buttons .btn {
+		padding: 1rem 2rem;
+	}
+
+	/* GENERAL */
+	.body-heading br {
+		display: none;
+	}
+
+	.body-heading {
+		margin: 0 2rem;
+	}
+
+	/* FEATURED SECTION */
+	.featured-logos img {
+		height: 1.2rem;
+	}
+
+	/* MEAL CARDS */
+	.meal-card {
+		width: 32rem;
+	}
+
+	/* PRICING CARDS */
+	.pricing-card {
+		width: 32rem;
+		height: 40rem;
+	}
+
+	/* PRICING SECTION BANNER */
+	.member-info-banner {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 2rem;
+	}
+
+	.banner-heading {
+		font-size: 1.3rem;
+	}
+
+	.banner-desc {
+		font-size: 1.1rem;
+	}
+
+	.banner-item {
+		width: 12rem;
+	}
+
+	.banner-item i {
+		font-size: 2rem;
+		margin: 0 auto;
+		color: #379e0a;
+		background: #d8f5cc;
+		padding: 1.5rem;
+		border-radius: 50px;
+	}
+
+	/* SUBSCRIBE */
+	.subscribe-box {
+		grid-template-columns: auto;
+	}
+
+	.subscribe-heading {
+		font-size: 3.4rem;
+	}
+
+	.subscribe-img {
+		height: 30rem;
+	}
+
+	/* TOGGLE BUG ON iPHONE FIX */
+	#toggle:checked + .toggle-wrapper:before {
+		transform: translateX(112%);
+	}
+
+	/* FOOTER */
+	.footer-nav {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

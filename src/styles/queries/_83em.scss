@@ -1,0 +1,52 @@
+@media only screen and (max-width: 83em) {
+	/* GENERAL */
+	.body-heading {
+		font-size: 3.8rem;
+	}
+
+	/* TESTIMONIALS */
+	.gallery {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.testimonials-details {
+		grid-template-columns: auto;
+	}
+
+	.testimonials-card {
+		padding: 2rem 3rem;
+	}
+
+	/* MEAL CARDS */
+	.meal-card .meal-types-list li {
+		padding: 0.4rem 0.6rem;
+		margin: 0.2rem;
+	}
+
+	.meal-card .meal-types-list {
+		font-size: 1rem;
+		line-height: 2rem;
+	}
+
+	.meal-card-body {
+		padding: 1rem 1.4rem;
+	}
+
+	.meal-card-heading {
+		font-size: 1.6rem;
+		margin: 1rem 0.6rem;
+	}
+
+	.meal-card-desc {
+		margin: auto 0.6rem 0.6rem 0.6rem;
+	}
+
+	.meal-stats {
+		font-size: 1.4rem;
+		margin: 0 1rem;
+	}
+
+	.meal-stats li {
+		padding-bottom: 0.6rem;
+	}
+}

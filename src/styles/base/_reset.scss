@@ -1,0 +1,50 @@
+/* RESETS */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	font-family: 'DM Sans', sans-serif;
+	height: 100%;
+	color: #121212;
+	font-size: 65%;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+select {
+	font: inherit;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul {
+	list-style-type: none;
+}
+
+span {
+	font-weight: 700;
+}
+
+small {
+	font-size: 1.4rem;
+	margin-top: 1.6rem;
+}

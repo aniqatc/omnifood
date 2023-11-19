@@ -1,0 +1,37 @@
+@media only screen and (max-width: 72em) {
+	/* GENERAL */
+	html,
+	body {
+		font-size: 65%;
+	}
+
+	/* HEADER & NAV */
+	.main-nav-list {
+		gap: 1rem;
+		padding: 1rem 2rem;
+	}
+
+	.header .solid-btn {
+		padding: 1rem 3rem;
+	}
+
+	/* HERO */
+	.hero-marquee {
+		max-width: 56rem;
+	}
+
+	/* PRICING CARDS */
+	.pricing-card {
+		padding: 3rem 1rem 3rem 2rem;
+		width: 34rem;
+		height: 38rem;
+	}
+
+	.pricing-list-items {
+		font-size: 1.5rem;
+	}
+
+	.pricing-list-items li {
+		line-height: 2.6rem;
+	}
+}

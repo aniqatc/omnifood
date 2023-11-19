@@ -1,0 +1,126 @@
+/* MEALS SECTION */
+.section-meals {
+	background: linear-gradient(180deg, #eef9e9 0%, rgba(255, 255, 255, 0.28) 100%);
+	margin: 0 auto;
+	padding: 4rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.meal-card-overview {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	max-width: 140rem;
+	gap: 2rem;
+	margin-top: 3rem;
+}
+
+/* MEAL CARDS */
+.meal-card {
+	border: 1px solid rgba(230, 230, 230, 0.6);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 16px;
+	transition: all 200ms ease-in;
+}
+
+.meal-card img {
+	width: 100%;
+	border-radius: 16px 16px 0px 0px;
+}
+
+.meal-card-body {
+	padding: 1.2rem 2rem;
+}
+
+.meal-card-heading {
+	font-size: 2rem;
+	font-weight: 700;
+	margin: 1rem 1rem;
+}
+
+.meal-card-desc {
+	color: #626262;
+	font-size: 1.2rem;
+	margin: auto 1rem 1rem 1rem;
+}
+
+.meal-stats {
+	font-size: 1.6rem;
+	padding: 1rem;
+	margin: 0 2rem;
+}
+
+.meal-stats li {
+	padding-bottom: 1rem;
+	vertical-align: middle;
+}
+
+.meal-stats i {
+	color: #246d05;
+	font-size: 2rem;
+	margin-right: 1.2rem;
+}
+
+.meal-card:hover {
+	transform: scale(1.05);
+	box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.184);
+	background: white;
+}
+
+/* MEAL TYPES LIST EXPANDED in MEAL SECTION */
+.meal-types-overview {
+	margin: 4rem auto;
+	font-size: 1.8rem;
+	font-weight: 500;
+	text-align: center;
+}
+
+.meal-types-overview span {
+	color: #379e0a;
+}
+
+.meal-types-overview .meal-types-list {
+	margin: 3rem 2rem;
+	transform: scale(1.2);
+	line-height: 4rem;
+}
+
+.meal-types-overview .meal-types-list li {
+	white-space: nowrap;
+}
+
+/* TESTIMONIALS SECTION */
+.section-testimonials {
+	display: grid;
+	grid-template-columns: 40fr 60fr;
+	gap: 5rem;
+	padding: 5rem;
+	max-width: 160rem;
+	margin: 0 auto;
+	justify-content: center;
+}
+
+/* TESTIMONIALS: GALLERY SECTION */
+.gallery {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 0.5rem;
+	width: 100%;
+}
+
+.gallery-img-wrapper {
+	overflow: hidden;
+}
+
+.gallery img {
+	transition: all 150ms ease-in;
+	filter: opacity(0.8);
+	height: 100%;
+	width: 100%;
+}
+
+.gallery img:hover {
+	transform: scale(1.2);
+	filter: opacity(1);
+}

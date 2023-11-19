@@ -1,0 +1,100 @@
+@media only screen and (max-width: 35em) {
+	/* HERO */
+	.header {
+		padding: 0 2rem;
+	}
+
+	.hero-marquee,
+	.hero-heading,
+	.hero-description {
+		max-width: 49rem;
+	}
+
+	.hero-heading {
+		font-size: 4.4rem;
+		line-height: 1.6;
+	}
+
+	.hero-customer-proof {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	/* GENERAL */
+	.subheading {
+		font-size: 2rem;
+	}
+
+	/* TESTIMONIALS */
+	.section-testimonials {
+		padding: 3rem;
+		gap: 3rem;
+	}
+
+	.testimonials-details {
+		gap: 1rem;
+		grid-template-columns: auto;
+	}
+
+	.gallery {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	/* MEAL CARDS */
+	.meal-types-overview .meal-types-list {
+		margin: 1rem;
+		transform: scale(1);
+	}
+
+	.meal-card-overview {
+		grid-template-columns: auto;
+	}
+
+	.meal-card {
+		width: 40rem;
+	}
+
+	.meal-card-body {
+		padding: 2rem;
+	}
+
+	.meal-card-heading {
+		font-size: 2.4rem;
+	}
+
+	.meal-card-desc {
+		font-size: 1.6rem;
+	}
+
+	.meal-stats {
+		font-size: 2rem;
+	}
+
+	.meal-types-overview br {
+		display: none;
+	}
+
+	/* PRICING SECTION BANNER */
+	.member-info-banner {
+		display: grid;
+		grid-template-columns: auto auto;
+		gap: 2rem;
+	}
+	/* SUBSCRIBE */
+	.subscribe-box label {
+		font-size: 1.4rem;
+	}
+
+	/* FOOTER */
+	footer {
+		padding: 3rem;
+	}
+
+	.section-footer {
+		grid-template-columns: auto;
+	}
+
+	.footer-nav {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}

@@ -1,0 +1,118 @@
+@media only screen and (max-width: 48em) {
+	/* HERO */
+	.hero-group {
+		grid-template-columns: 1fr;
+		gap: 0;
+	}
+
+	.hero-text-wrapper {
+		justify-self: center;
+		align-self: center;
+	}
+
+	.hero-marquee,
+	.hero-heading,
+	.hero-description {
+		margin: 2rem;
+		max-width: 58rem;
+	}
+
+	.hero-buttons {
+		text-align: center;
+	}
+
+	.hero-customer-proof {
+		margin: 0;
+		padding: 0;
+	}
+
+	.hero-img-wrapper {
+		display: none;
+	}
+
+	.mobile-hero-img img {
+		display: block;
+	}
+
+	/* FEATURED SECTION */
+	.featured-logos img {
+		height: 1.6rem;
+	}
+
+	/* HOW IT WORKS SECTION */
+	.section-how {
+		padding: 4rem 0;
+	}
+
+	.how-heading {
+		font-size: 2.6rem;
+	}
+
+	.how-step-num {
+		margin-top: 8rem;
+	}
+
+	.how-full-wrapper,
+	.how-full-wrapper-switch {
+		flex-direction: column;
+		height: auto;
+		gap: 2rem;
+		margin: 2rem;
+	}
+
+	.how-img-wrapper .mobile-bg:last-child {
+		margin-bottom: 14rem;
+	}
+
+	/* PRICING CARDS */
+	.pricing-card-wrapper {
+		flex-direction: column;
+	}
+
+	.pricing-card {
+		width: 36rem;
+		height: 40rem;
+	}
+
+	.pricing-list-items {
+		font-size: 1.8rem;
+	}
+
+	.pricing-list-items li {
+		line-height: 3rem;
+	}
+
+	.selected-pricing:after {
+		right: -15%;
+	}
+
+	.pricing-card h1 {
+		font-size: 5rem;
+	}
+
+	.pricing-card small {
+		font-size: 1.6rem;
+	}
+
+	/* SUBSCRIBE */
+	.section-subscribe {
+		padding: 2rem;
+	}
+
+	/* FOOTER */
+	footer .logo {
+		height: 2.4rem;
+	}
+
+	.section-footer {
+		grid-template-columns: 1fr 2fr;
+	}
+
+	.footer-nav {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.footer-links li {
+		padding: 0.3rem;
+	}
+}

@@ -1,0 +1,82 @@
+/* FOOTER SECTION */
+footer {
+	background: #f7fff4;
+	border-top: 1px solid #e1e1e1;
+	padding: 6rem 5rem;
+}
+
+.section-footer {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	justify-content: center;
+	margin: 0 auto;
+	gap: 4rem;
+	max-width: 120rem;
+	align-items: flex-end;
+}
+
+.footer-info-desc {
+	color: #333333;
+	margin: 2rem 0;
+	font-size: 1.4rem;
+}
+
+.footer-socials i {
+	font-size: 2rem;
+	color: #123901;
+	margin-right: 2rem;
+}
+
+.footer-socials i:hover {
+	color: #216703;
+}
+
+/* FOOTER LINKS */
+.footer-nav {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	justify-content: space-around;
+}
+
+.footer-links {
+	font-size: 1.4rem;
+}
+
+.footer-links li {
+	padding: 1rem;
+}
+
+.footer-links li:hover {
+	text-decoration: underline;
+}
+
+.footer-links li:first-child {
+	font-weight: 700;
+	font-size: 1.5rem;
+	text-decoration: none;
+	cursor: auto;
+	margin-top: 1rem;
+}
+
+.contact-info li:hover {
+	text-decoration: none;
+	cursor: auto;
+}
+
+/* CREDIT BANNER */
+.dev-credits {
+	font-size: 1.6rem;
+	background: #123901;
+	color: #d7efcd;
+	font-weight: 700;
+	text-align: center;
+	padding: 1rem;
+}
+
+.dev-credits a {
+	color: white;
+}
+
+.dev-credits a:hover {
+	color: rgb(112, 215, 68);
+}

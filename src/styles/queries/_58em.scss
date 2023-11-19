@@ -1,0 +1,34 @@
+@media only screen and (max-width: 58em) {
+	/* GENERAL */
+	html,
+	body {
+		font-size: 60%;
+	}
+
+	/* FEATURED SECTION */
+	.featured-logos {
+		padding: 2rem 1rem;
+	}
+
+	.featured-logos img {
+		height: 2rem;
+	}
+
+	/* SECTION HOW IT WORKS */
+	.how-full-wrapper,
+	.how-full-wrapper-switch {
+		gap: 4rem;
+	}
+
+	/* SUBSCRIBE FORM */
+	.subscribe-box {
+		grid-template-columns: 45fr 55fr;
+	}
+
+	.subscribe-form form {
+		grid-template-columns: auto;
+	}
+	.subscribe-btn {
+		margin-top: 1.4rem;
+	}
+}

@@ -1,0 +1,95 @@
+/* HOW IT WORKS SECTION */
+.section-how {
+	max-width: 130rem;
+	margin: 0 auto;
+	padding: 6rem 4rem;
+}
+
+.how-full-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+}
+
+.how-img-wrapper .mobile-bg:last-child {
+	margin-bottom: 10rem;
+}
+
+.how-full-wrapper-switch {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10rem;
+	margin-top: 3rem;
+	flex-direction: row-reverse;
+}
+
+.how-text-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+/* HOW IT WORKS SECTION: APP SCREENSHOTS */
+.mobile-bg {
+	background: linear-gradient(180deg, #95cc7e 0%, rgba(149, 204, 126, 0) 100%);
+	border-radius: 20px;
+	padding: 4rem;
+	height: 36rem;
+	width: 30rem;
+	margin-top: 3rem;
+}
+
+.mobile-bg img {
+	min-width: 18rem;
+	width: 22rem;
+	display: none;
+}
+
+/* ANIMATION FOR APP SCREENSHOTS */
+.animate-img img {
+	animation: scroll-img 1s ease-in-out;
+	display: block;
+}
+
+@keyframes scroll-img {
+	0% {
+		opacity: 0;
+		transform: translateY(40%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+
+/* HOW IT WORKS SECTION: TEXT & DETAILS */
+.how-step-num {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ddf3d3;
+	background: #379e0a;
+	font-size: 3rem;
+	border-radius: 50%;
+	width: 6.5rem;
+	height: 6.5rem;
+	margin-bottom: 2rem;
+	padding: 2.5rem;
+}
+
+.how-heading {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+.how-heading span {
+	font-style: italic;
+	font-weight: 400;
+}
+
+.how-desc {
+	font-size: 1.6rem;
+	max-width: 46rem;
+}

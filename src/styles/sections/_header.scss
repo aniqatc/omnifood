@@ -1,0 +1,84 @@
+/* HEADER */
+.logo {
+	height: 3rem;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 9rem;
+	padding: 0 4rem;
+}
+
+.main-nav-list {
+	list-style: none;
+	display: flex;
+	gap: 1.8rem;
+	font-size: 1.7rem;
+	font-weight: 700;
+	background: #d8f5cc;
+	border-radius: 50px;
+	padding: 1rem 2rem;
+}
+
+.main-nav-list a {
+	padding: 1rem;
+	transition: all 150ms ease-in-out;
+}
+
+.main-nav-list a:hover {
+	background: #c4e8b4;
+	color: #2b7f06;
+}
+
+.header .solid-btn {
+	padding: 1rem 4rem;
+}
+
+.header .solid-btn i {
+	color: #e3f9da;
+	margin-right: 0.2rem;
+}
+
+/* HEADER STICKY */
+.sticky .header {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background: #f1ffebb7;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+	z-index: 10;
+	height: 8rem;
+	box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.05);
+}
+
+.sticky .section-hero {
+	margin-top: 8rem;
+}
+
+/* MOBILE NAV */
+.mobile-nav-btn {
+	border: none;
+	background: none;
+	cursor: pointer;
+	display: none;
+	box-shadow: none;
+	width: fit-content;
+}
+
+.mobile-nav-btn i {
+	color: #0e2803;
+	font-size: 3.6rem;
+}
+
+.mobile-order,
+.mobile-close i {
+	display: none;
+}
+
+.freeze-scroll {
+	overflow: hidden;
+}
