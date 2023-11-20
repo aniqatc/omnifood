@@ -8,10 +8,6 @@ navLinks.forEach(link =>
 	})
 );
 
-document.querySelector('.mobile-nav-btn').addEventListener('click', () => {
-	document.body.classList.toggle('freeze-scroll');
-});
-
 /* STICKY NAVIGATION */
 const heroElement = document.querySelector('.section-hero');
 const navObserver = new IntersectionObserver(

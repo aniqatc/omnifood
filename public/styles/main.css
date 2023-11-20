@@ -130,9 +130,6 @@ small {
 .mobile-close i {
   display: none; }
 
-.freeze-scroll {
-  overflow: hidden; }
-
 /* HERO */
 .section-hero {
   background: linear-gradient(359.56deg, rgba(196, 232, 180, 0.43) -32.94%, rgba(216, 245, 204, 0) 99.61%);
