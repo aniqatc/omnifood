@@ -5,9 +5,12 @@ const navLinks = document.querySelectorAll('.nav-link, .mobile-nav-btn');
 navLinks.forEach(link =>
 	link.addEventListener('click', () => {
 		headerElement.classList.toggle('nav-open');
-		document.body.classList.toggle('freeze-scroll');
 	})
 );
+
+document.querySelector('.mobile-nav-btn').addEventListener('click', () => {
+	document.body.classList.toggle('freeze-scroll');
+});
 
 /* STICKY NAVIGATION */
 const heroElement = document.querySelector('.section-hero');
@@ -42,9 +45,7 @@ const pricing = document.querySelectorAll('.pricing-num');
 const toggleButton = document.querySelector('#toggle');
 
 function togglePricing() {
-	const prices = toggleButton.checked
-		? ['3995', '6995', '9995']
-		: ['395', '645', '999'];
+	const prices = toggleButton.checked ? ['3995', '6995', '9995'] : ['395', '645', '999'];
 	pricing.forEach((price, i) => (price.textContent = prices[i]));
 }
 
